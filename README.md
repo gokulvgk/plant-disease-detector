@@ -28,7 +28,7 @@ The application is built using Python with a GUI implemented using `tkinter`. Us
 
 ## 🛠 Tech Stack
 
-- **Language:** 
+- **Languages:** 
     - HTML
     - CSSS
     - Javascript
@@ -37,17 +37,17 @@ The application is built using Python with a GUI implemented using `tkinter`. Us
     - REACT
     - FLASK
 - **Model:** 
-- CNN (Keras / TensorFlow-based)  
+    - CNN (Keras / TensorFlow-based)  
 
 
 ---
 
 ## 📸 Screenshots
 
-![Home page](sceenshots\plant ai index.png)  
+![Home page](screenshots\index.png)  
 *Main application interface*
 
-![Prediction Example](screenshots/prediction page.png)  
+![Prediction Example](screenshots/prediction.png)  
 *Prediction result after uploading an image*
 
 ---
