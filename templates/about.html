@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Plant Disease Detection</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        body { padding-top: 70px; }
+        html { scroll-behavior: smooth; }
+        .btn-custom { font-size: 16px; transition: all 0.3s; }
+        .btn-custom:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🌿 AI Plant Detector</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="detectDropdown" role="button" data-bs-toggle="dropdown">
+                            Detect Now
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ url_for('upload_file') }}">📷 Image Prediction</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('live_page') }}">🎥 Live Prediction</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="container mt-3">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Hero Section -->
+    <header class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold">🌿 AI-Powered Plant Disease Detection</h1>
+            <p class="text-muted">Instantly analyze plant health using AI technology.</p>
+            <a href="{{ url_for('home') }}" class="btn btn-success btn-lg shadow">🚀 Start Detecting Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">About Our AI Plant Disease Detection</h2>
+                <p class="text-muted">A smart, AI-powered tool that helps farmers detect plant diseases instantly.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">🌍 Why We Built This?</h5>
+                            <p class="card-text">
+                                Farmers worldwide struggle with crop diseases, leading to reduced yields and economic loss. 
+                                Our **AI-powered plant disease detection system** provides a fast and accurate diagnosis, helping farmers take timely action.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">🔬 Why CNN & MobileNetV2?</h5>
+                            <p class="card-text">We use state-of-the-art deep learning models to ensure fast and accurate disease detection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="fw-bold">🌱 CNN (Convolutional Neural Networks)</h5>
+                            <ul>
+                                <li>Extracts deep visual features from plant leaves.</li>
+                                <li>Handles complex disease patterns with high accuracy.</li>
+                                <li>Scalable for large agricultural datasets.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="fw-bold">📱 MobileNetV2 (Optimized for Mobile)</h5>
+                            <ul>
+                                <li>Lightweight and runs smoothly on mobile devices.</li>
+                                <li>Uses fewer resources without sacrificing performance.</li>
+                                <li>Perfect for real-time plant disease scanning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="fw-bold text-center">📞 Get in Touch</h2>
+            <p class="text-muted text-center">Have questions? Reach out to us.</p>
+            <!-- Center the button using flexbox -->
+            <div class="d-flex justify-content-center">
+                <a href="{{ url_for('contact') }}" class="btn btn-success btn-lg shadow">Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p class="mb-0">© 2025 AI Plant Detector | Built with ❤️ & AI</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
