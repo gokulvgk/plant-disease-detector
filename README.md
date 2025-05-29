@@ -44,7 +44,7 @@ The application is built using Python with a GUI implemented using `tkinter`. Us
 
 ## 📸 Screenshots
 
-![Home page](screenshots\index.png)  
+![Home page](screenshots/index.png)  
 *Main application interface*
 
 ![Prediction Example](screenshots/prediction.png)  
