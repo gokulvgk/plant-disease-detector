@@ -11,16 +11,16 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #dbd1c4;
             color: #333;
         }
         .navbar {
-            background-color: #28a745;
+            background-color: #0a0b44;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .navbar-brand {
             font-weight: bold;
-            font-size: 24px;
+            font-size: 34px;
         }
         .navbar-nav .nav-link {
             color: white !important;
@@ -30,12 +30,11 @@
             color: #d4edda !important;
         }
         .hero-section {
-            background: linear-gradient(rgba(40, 167, 69, 0.8), rgba(40, 167, 69, 0.8)), url('https://via.placeholder.com/1500x600');
+            background: linear-gradient(rgba(119, 164, 198, 0.8), rgba(64, 107, 225, 0.8)), url('https://via.placeholder.com/1500x600');
             background-size: cover;
             background-position: center;
             padding: 60px 20px;
-            color: white;
-            text-align: center;
+            color: rgb(58, 48, 197);
         }
         .hero-section h1 {
             font-size: 36px;
@@ -43,7 +42,7 @@
             margin-bottom: 15px;
         }
         .hero-section p {
-            font-size: 16px;
+            font-size: 20px;
             margin-bottom: 20px;
         }
         .search-container {
@@ -51,34 +50,37 @@
             margin: 0 auto;
             display: flex;
             gap: 10px;
-            flex-direction: column;
+            flex-direction: row;
             align-items: stretch;
         }
         .search-container input {
-            width: 100%;
-            padding: 12px;
+            width: 80%;
+            padding: 15px;
             border: none;
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 150px;
+            font-size: 18px;
         }
         .search-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: #218838;
+            width: 80%;
+            padding: 15px;
+            background-color: #26308a;
             border: none;
-            color: white;
-            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            border-radius: 150px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
         }
         .search-container button:hover {
-            background-color: #1e7e34;
+            background-color: #14066b;
         }
         .card {
             border: none;
-            border-radius: 10px;
+            border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            background-color: #a6aacc;
+            width: 80%;
+            
         }
         .card:hover {
             transform: translateY(-5px);
@@ -86,14 +88,14 @@
         .card-title {
             font-size: 20px;
             font-weight: bold;
-            color: #28a745;
+            color: #284ea7;
         }
         .card-text {
             font-size: 16px;
             color: #555;
         }
         .footer {
-            background-color: #28a745;
+            background-color: #0a0756;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -108,8 +110,8 @@
             overflow-y: auto;
         }
         .disease-list li {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
+            padding: 20px;
+            border-bottom: 1px solid #120845;
         }
         .disease-list li:last-child {
             border-bottom: none;
@@ -187,7 +189,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Plant AI</a>
+            <a class="navbar-brand" href="#">Code Chemists</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -220,7 +222,7 @@
             <!-- AI Detection Section -->
             <div class="col-md-6">
                 <div class="card p-4 text-center">
-                    <h2 class="mb-4">Detect Plant Diseases with AI</h2>
+                    <h2 class="mb-4">Select Your Choice</h2>
                     <div class="d-grid gap-3 col-8 mx-auto">
                         <a href="{{ url_for('upload_file') }}" class="btn btn-success btn-lg"><i class="fas fa-upload"></i> Upload Image</a>
                         <a href="{{ url_for('live_page') }}" class="btn btn-success btn-lg"><i class="fas fa-camera"></i> Live Detection</a>
@@ -231,7 +233,7 @@
             <!-- Disease List -->
             <div class="col-md-6">
                 <div class="card p-4">
-                    <h4 class="text-center mb-4">Common Plant Diseases</h4>
+                    <h4 class="text-center mb-4">List of Common Plant Diseases</h4>
                     <ul class="list-group disease-list">
                         <li class="list-group-item">Apple Scab - <em>Malus domestica</em></li>
                         <li class="list-group-item">Apple Black Rot - <em>Malus domestica</em></li>
@@ -263,7 +265,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Plant AI Detection | Built with ❤️ using AI & Bootstrap</p>
+            <p>Plant AI Detection | Built with ❤️ using AI & Bootstrap</p>
         </div>
     </footer>
 

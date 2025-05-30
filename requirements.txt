@@ -1,5 +1,5 @@
 absl-py==2.1.0
-aiofiles==24.1.0
+aiofiles
 aiohappyeyeballs==2.6.1
 aiohttp==3.11.18
 aiohttp-retry==2.9.1
@@ -32,7 +32,7 @@ build==1.2.2.post1
 bye==1.0.0
 cachetools==5.5.2
 catalogue==2.0.10
-certifi==2023.7.22
+certifi
 cffi==1.16.0
 chardet==3.0.4
 charset-normalizer==3.3.0
@@ -57,7 +57,7 @@ dm-tree==0.1.8
 dnspython==2.7.0
 docker==7.1.0
 docopt==0.6.2
-docutils==0.21.2
+docutils
 emailmessage==0.2.1
 et_xmlfile==2.0.0
 executing==2.2.0
@@ -86,7 +86,7 @@ gast==0.5.4
 gdown==5.2.0
 geopandas==1.0.1
 google==3.0.0
-google-ai-generativelanguage==0.6.18
+google-ai-generativelanguage
 google-api-core==2.24.2
 google-api-python-client==2.169.0
 google-auth==2.40.1
@@ -96,7 +96,7 @@ google-generativeai==0.8.5
 google-pasta==0.2.0
 googleapis-common-protos==1.70.0
 googletrans==3.0.0
-grpcio==1.62.1
+grpcio
 grpcio-status==1.71.0
 grpcio-tools==1.71.0
 gTTS==2.5.0
@@ -109,9 +109,9 @@ hell==0.4.1
 hpack==3.0.0
 hstspreload==2023.1.1
 html5lib==1.1
-httpcore==1.0.9
+httpcore
 httplib2==0.22.0
-httpx==0.28.1
+httpx
 hyperframe==5.2.0
 idna==2.10
 imageio==2.37.0
@@ -207,7 +207,7 @@ panda==0.3.1
 pandas==2.2.1
 pandocfilters==1.5.1
 parso==0.8.4
-pathtools @ file:///C:/Users/Gokul%20Krishnan/Downloads/pathtools-0.1.2/pathtools-0.1.2/dist/pathtools-0.1.2-py3-none-any.whl#sha256=508473252f0699878c9bb34dc4dca3df116546a981c28542b73021848f519081
+pathtools==0.1.2 
 patsy==1.0.1
 peewee==3.18.1
 pefile==2023.2.7
@@ -225,7 +225,7 @@ prometheus_client==0.22.0
 prompt_toolkit==3.0.50
 propcache==0.3.1
 proto-plus==1.26.1
-protobuf==4.25.3
+protobuf>=5.26.1,<6.0.0
 psutil==7.0.0
 psycopg2==2.9.10
 pu==0.20.1
@@ -268,7 +268,7 @@ python-json-logger==3.3.0
 python-vlc==3.0.20123
 pyttsx3==2.90
 pytweening==1.0.7
-pytz==2024.1
+pytz
 pywin32==306
 pywin32-ctypes==0.2.2
 pywinpty==2.0.15
@@ -285,7 +285,7 @@ rfc3986==1.5.0
 rfc3986-validator==0.1.1
 rich==13.7.1
 rpds-py==0.23.1
-rsa==4.9.1
+rsa
 ruamel.yaml==0.18.10
 ruamel.yaml.clib==0.2.12
 s3transfer==0.12.0
@@ -334,7 +334,7 @@ tinycss2==1.4.0
 tk==0.1.0
 torch==2.3.1
 torchaudio==2.3.1
-torchvision==0.18.1
+torchvision==0.18.1              
 tornado==6.4.2
 tqdm==4.66.4
 traitlets==5.14.3
