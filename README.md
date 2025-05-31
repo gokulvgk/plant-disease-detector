@@ -12,7 +12,7 @@ This project aims to provide an AI-powered, image-based tool for detecting plant
 
 We used a Convolutional Neural Network (CNN) trained on a labeled dataset of plant leaf images. The trained model is capable of classifying images into various disease categories.
 
-The application is built using Python with a GUI implemented using `tkinter`. Users can upload a leaf image, and the model predicts the disease class and shows the result within the application.
+The application Users can upload a leaf image, and the model predicts the disease class and shows the result within the application.
 
 ---
 
@@ -30,7 +30,7 @@ The application is built using Python with a GUI implemented using `tkinter`. Us
 
 - **Languages:** 
     - HTML
-    - CSSS
+    - CSS
     - Javascript
     - Python 
 - **Frameworks:** 
