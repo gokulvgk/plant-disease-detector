@@ -44,10 +44,10 @@ The application Users can upload a leaf image, and the model predicts the diseas
 
 ## 📸 Screenshots
 
-![Home page](screenshots/index.png)  
+![Home page](index.jpg)  
 *Main application interface*
 
-![Prediction Example](screenshots/prediction.png)  
+![Prediction Example](predict.jpg)  
 *Prediction result after uploading an image*
 
 ---
